@@ -88,7 +88,7 @@ struct Snapshot: Codable, Hashable {
         }
         s.week = UsageTotals(input: 21_000, output: 711_000, cacheRead: 35_500_000, cacheWrite: 2_370_000,
                              messages: 1_580, toolCalls: 1_204, sessions: 19, activeMinutes: 612)
-        s.topProjects = [.init(name: "ftc-predictions", tokens: 21_000_000), .init(name: "Claude_Widget", tokens: 9_800_000), .init(name: "lovat", tokens: 7_100_000)]
+        s.topProjects = [.init(name: "my-app", tokens: 21_000_000), .init(name: "Claude-Code-Widget", tokens: 9_800_000), .init(name: "website", tokens: 7_100_000)]
         s.activity = Activity(state: .working, headline: "Editing Snapshot.swift", detail: "Shared/Snapshot.swift",
                               toolName: "Edit", project: "Claude_Widget", prompt: "create me a widget app that shows claude code's progress",
                               model: "claude-opus-5-5", lastEvent: Date(), sessionStart: Date().addingTimeInterval(-1800), activeSessions: 1)
